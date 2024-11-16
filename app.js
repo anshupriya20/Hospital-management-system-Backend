@@ -31,11 +31,11 @@ app.use(
 )
 
 app.use("/api/v1/message",
-    messageRouter());
+    messageRouter);
 app.use("/api/v1/user",
-    userRouter());
+    userRouter);
 
 dbConnection()
 
-app.use(errorMiddleware());
+app.use(errorMiddleware);
 export default app;
